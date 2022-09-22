@@ -3,8 +3,8 @@ import cv2
 import time
 
 # Load Yolo
-# net = cv2.dnn.readNet('models/yolov3.weights', 'cfg/yolov3.cfg')
-net = cv2.dnn.readNet('models/yolov3-tiny.weights', 'cfg/yolov3-tiny.cfg')
+net = cv2.dnn.readNet('models/yolov3.weights', 'cfg/yolov3.cfg')
+# net = cv2.dnn.readNet('models/yolov3-tiny.weights', 'cfg/yolov3-tiny.cfg')
 classes = []
 with open('data/coco.names', 'r') as f:
     classes = [line.strip() for line in f.readlines()]
